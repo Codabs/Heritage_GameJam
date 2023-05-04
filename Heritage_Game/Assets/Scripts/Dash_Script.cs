@@ -43,7 +43,7 @@ public class Dash_Script : MonoBehaviour
     }
     public void Dash(Vector2 direction)
     {
-        if (canDash && Win_Condition_Script.Instance.playerWhoHasTheCrown != numberOfPlayer)
+        if (canDash && Win_Condition_Script.Instance.playerWhoHasTheCrown != numberOfPlayer && !movement_Script.isThePlayerStun)
         {
             isDashing = true;
             dashParticule.Play();
