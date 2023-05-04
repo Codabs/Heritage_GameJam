@@ -22,6 +22,7 @@ public class Box_Script : MonoBehaviour
             {
                 breakParticule.Play();
                 DestroyTheBox();
+                otherPlayerScript.GetComponent<Rigidbody2D>().velocity *= 50;
                 return;
             }
             lifePoint--;

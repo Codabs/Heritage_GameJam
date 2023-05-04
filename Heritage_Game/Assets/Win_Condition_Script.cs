@@ -21,6 +21,8 @@ public class Win_Condition_Script : MonoBehaviour
 
     public GameObject crownPrefab;
 
+    public GameObject winning_Canvas;
+    public TextMeshProUGUI textWinning;
     public float TimerOne { 
         set {
             timerPlayerOne = value;
@@ -60,10 +62,19 @@ public class Win_Condition_Script : MonoBehaviour
                 break;
         }
         generalTimer -= Time.deltaTime;
+        CheckIfPlayerWin();
         if ((int)generalTimer <= 0)
         {
             textTimerGeneral.text = "0";
             //End
+            if(timerPlayerOne > timerPlayerTwo)
+            {
+                PlayerWin(1);
+            }
+            else if(timerPlayerOne < timerPlayerTwo)
+            {
+                PlayerWin(2);
+            }
         }
         else
         {
@@ -71,6 +82,21 @@ public class Win_Condition_Script : MonoBehaviour
         }
 
     }
+
+    private void CheckIfPlayerWin()
+    {
+        if(TimerOne >= 60)
+        {
+            PlayerWin(1);
+            TimerOne = 60;
+        }
+        else if (TimerTwo >= 60)
+        {
+            PlayerWin(2);
+            TimerTwo = 60;
+        }
+    }
+
     public void PlayerOneGetTheCrown()
     {
         playerWhoHasTheCrown = 1;
@@ -84,5 +110,10 @@ public class Win_Condition_Script : MonoBehaviour
         GameObject crown = Instantiate(crownPrefab, position, Quaternion.identity);
         playerWhoHasTheCrown = 0;
         crown.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(0, 1), Random.Range(0, 1)) * 10;
+    }
+    private void PlayerWin(int numberOfThePlayer)
+    {
+        winning_Canvas.SetActive(true);
+        textWinning.text = "Player " + numberOfThePlayer + "Win";
     }
 }
