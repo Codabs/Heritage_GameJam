@@ -38,8 +38,10 @@ public class Movement_Script : MonoBehaviour
                 Mathf.Clamp(rigidbody2D.velocity.y, -maxSpeed, maxSpeed));
         //Movement
         rigidbody2D.velocity += movement * speed;
+        player_Animator.Play("Idle");
         if (movement == Vector2.zero) return;
         lastMovement = movement;
+        player_Animator.Play("Running");
     }
     public void XMovement(InputAction.CallbackContext context)
     {
