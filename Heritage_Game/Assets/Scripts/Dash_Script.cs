@@ -20,6 +20,7 @@ public class Dash_Script : MonoBehaviour
     public bool isDashing = false;
     public bool haveTheCrown = false;
     public int numberOfPlayer = 1;
+    public Camera cam; 
 
     //=========
     //FONCTION
@@ -28,7 +29,19 @@ public class Dash_Script : MonoBehaviour
     {
         canDash = true;
     }
-    public void Dash(InputAction.CallbackContext context)
+    public void DashingOnMouse(InputAction.CallbackContext context)
+    {
+        Vector3 mousePosition = cam.ScreenToWorldPoint(Input.mousePosition);
+        print(mousePosition);
+        Vector2 direction = mousePosition - transform.position;
+
+        Dash(direction.normalized);
+    }
+    public void DashingOnController(InputAction.CallbackContext context)
+    {
+        Dash(movement_Script.lastMovement);
+    }
+    public void Dash(Vector2 direction)
     {
         if (canDash && Win_Condition_Script.Instance.playerWhoHasTheCrown != numberOfPlayer)
         {
@@ -36,7 +49,7 @@ public class Dash_Script : MonoBehaviour
             dashParticule.Play();
             float startMaxSpeed = movement_Script.maxSpeed;
             movement_Script.maxSpeed = dashSpeed;
-            rigidbody2D.velocity = movement_Script.lastMovement * dashSpeed;
+            rigidbody2D.velocity = direction * dashSpeed;
 
             Sequence s = DOTween.Sequence();
             DOVirtual.Float(movement_Script.maxSpeed, startMaxSpeed, 

@@ -48,7 +48,7 @@
                 {
                     "name": "negative",
                     "id": "afd9619a-49ac-4aa4-97a8-f8fff9b8008c",
-                    "path": "<Keyboard>/downArrow",
+                    "path": "<Gamepad>/leftStick/down",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -59,7 +59,7 @@
                 {
                     "name": "positive",
                     "id": "d541dfab-168d-4c02-a58b-6ea9fe28096c",
-                    "path": "<Keyboard>/upArrow",
+                    "path": "<Gamepad>/leftStick/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -81,7 +81,7 @@
                 {
                     "name": "negative",
                     "id": "e579ff01-2f1d-44f2-be9f-5fdc665d2863",
-                    "path": "<Keyboard>/leftArrow",
+                    "path": "<Gamepad>/leftStick/left",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -92,7 +92,7 @@
                 {
                     "name": "positive",
                     "id": "5fc98328-5cd8-4978-add5-f36fd95e71de",
-                    "path": "<Keyboard>/rightArrow",
+                    "path": "<Gamepad>/leftStick/right",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -103,7 +103,7 @@
                 {
                     "name": "",
                     "id": "1366f4d6-d387-4df4-825d-c1627fc8c070",
-                    "path": "<Keyboard>/space",
+                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -214,8 +214,8 @@
                 },
                 {
                     "name": "",
-                    "id": "3eb57733-b101-451e-8920-8f72edc641aa",
-                    "path": "<Keyboard>/alt",
+                    "id": "54850575-cf3e-4c3b-8fce-49606f027ecd",
+                    "path": "<Mouse>/press",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
