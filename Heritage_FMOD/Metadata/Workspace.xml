@@ -5,31 +5,31 @@
 			<value>../Heritage_Game/Assets/_externals/FmodBanks</value>
 		</property>
 		<relationship name="masterEventFolder">
-			<destination>{d6b643b0-aefe-4702-b808-6b5a80136663}</destination>
+			<destination>{c891ca56-a2da-40a2-9673-4ebaec570608}</destination>
 		</relationship>
 		<relationship name="masterTagFolder">
-			<destination>{0a59994a-af61-40b7-8d0a-3d14c50f442b}</destination>
+			<destination>{c8fa0962-e49e-406c-95a9-153546010e57}</destination>
 		</relationship>
 		<relationship name="masterEffectPresetFolder">
-			<destination>{051d03b5-c77a-4fc6-bf56-690ee736513f}</destination>
+			<destination>{fa251aa4-3e47-445b-9d15-a7a423ce7d4b}</destination>
 		</relationship>
 		<relationship name="masterParameterPresetFolder">
-			<destination>{4bea178e-ee8a-4586-adc8-38b0d2fb9388}</destination>
+			<destination>{fad2060f-ef29-4bd3-bbf1-8709bd31789d}</destination>
 		</relationship>
 		<relationship name="masterBankFolder">
-			<destination>{cb1663b4-b736-4068-bc06-153adb15edbf}</destination>
+			<destination>{f2529a3b-a7e0-48f2-81cc-d735ea1a39ec}</destination>
 		</relationship>
 		<relationship name="masterSandboxFolder">
-			<destination>{38372df2-29b3-4f36-a536-f17f528a6a97}</destination>
+			<destination>{7a00e17d-06fd-4b97-8721-c90e2958ac9f}</destination>
 		</relationship>
 		<relationship name="masterAssetFolder">
-			<destination>{d3990c9a-3018-4c92-857e-c4af1af40e86}</destination>
+			<destination>{641ea1b5-3c3a-4e3e-bca6-c9a70a187ef8}</destination>
 		</relationship>
 		<relationship name="mixer">
-			<destination>{f834e6ff-c95b-452f-a758-3bbc27b5fe66}</destination>
+			<destination>{e426ffd8-2fe6-4a72-b712-a2d311153371}</destination>
 		</relationship>
 		<relationship name="profilerSessionFolder">
-			<destination>{a6f1a259-f131-4bab-833b-37dac786b241}</destination>
+			<destination>{b28bfe7e-7f85-4642-8d5b-7e819c0433c6}</destination>
 		</relationship>
 		<relationship name="platforms">
 			<destination>{385775ee-edea-43e2-aaf7-6c88ee2fa003}</destination>
