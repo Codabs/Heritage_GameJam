@@ -75,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.71785504, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 9af8c1d5f399ae949a43ccc85ea2a000, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -126,9 +126,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprites:
   - {fileID: 21300000, guid: 5d52b20f865aff242bfcb08c3b6f61a5, type: 3}
-  - {fileID: 21300000, guid: 2e0cf451cb3d56742aad87ea75993209, type: 3}
-  - {fileID: 21300000, guid: 9ea72647c24be493ba6f15a9cd2a24ae, type: 3}
-  - {fileID: 21300000, guid: 9ea72647c24be493ba6f15a9cd2a24ae, type: 3}
+  - {fileID: 21300000, guid: 7593cc80869f8a64f97d77296ba1b9e4, type: 3}
+  - {fileID: 21300000, guid: 8f5e2851953b88148a8096e12b15a33e, type: 3}
+  - {fileID: 21300000, guid: 9af8c1d5f399ae949a43ccc85ea2a000, type: 3}
   lifePoint: 3
   breakParticule: {fileID: 8279537922041656724}
   spriteComponent: {fileID: 1144643383091749059}
