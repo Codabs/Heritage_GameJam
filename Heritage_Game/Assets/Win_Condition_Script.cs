@@ -23,12 +23,18 @@ public class Win_Condition_Script : MonoBehaviour
 
     public GameObject winning_Canvas;
     public TextMeshProUGUI textWinning;
+
+    public GameObject crownPlayerOne;
+    public GameObject crownPlayerTwo;
+
+    //========
+    //GETTERS AND SETTERS
+    //========
     public float TimerOne { 
         set {
             timerPlayerOne = value;
             textTimerOne.text = (Mathf.RoundToInt(value) * 100 / 60).ToString() + "%";
         } get { return timerPlayerOne; } }
-
     public float TimerTwo
     {
         set
@@ -100,10 +106,16 @@ public class Win_Condition_Script : MonoBehaviour
     public void PlayerOneGetTheCrown()
     {
         playerWhoHasTheCrown = 1;
+
+        crownPlayerOne.SetActive(true);
+        crownPlayerTwo.SetActive(false);
     }
     public void PlayerTwoGetTheCrown()
     {
         playerWhoHasTheCrown = 2;
+
+        crownPlayerOne.SetActive(false);
+        crownPlayerTwo.SetActive(true);
     }
     public void DropTheCrown(Vector3 position)
     {
