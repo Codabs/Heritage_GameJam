@@ -16,13 +16,16 @@ public class Crown_Script : MonoBehaviour
     //========
     private void Awake()
     {
-        StartCoroutine(ChangeLayer());
         GameObject.FindAnyObjectByType<CinemachineTargetGroup>().AddMember(transform, 1, 1);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.TryGetComponent<Dash_Script>(out Dash_Script playerScript))
         {
+            if (collision.gameObject.TryGetComponent<Movement_Script>(out Movement_Script movement_Script))
+            {
+                if (movement_Script.isThePlayerStun) return;
+            }
             if(playerScript.numberOfPlayer == 1)
             {
                 Win_Condition_Script.Instance.PlayerOneGetTheCrown();

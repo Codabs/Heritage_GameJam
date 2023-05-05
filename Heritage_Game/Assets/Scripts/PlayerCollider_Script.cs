@@ -17,10 +17,11 @@ public class PlayerCollider_Script : MonoBehaviour
     //========
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (dash_Script.isDashing) FMODUnity.RuntimeManager.PlayOneShot("event:/DashCollision");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/DashCollision");
         if (collision.gameObject.TryGetComponent<Movement_Script>(out Movement_Script otherPlayerScript))
         {
-            if(dash_Script.isDashing && !otherPlayerScript.isThePlayerStun)
+            FMODUnity.RuntimeManager.PlayOneShot("event:/HitPlayer");
+            if (dash_Script.isDashing && !otherPlayerScript.isThePlayerStun)
             {
                 //Stun the other player
                 otherPlayerScript.Stun();

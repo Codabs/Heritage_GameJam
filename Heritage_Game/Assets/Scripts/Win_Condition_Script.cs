@@ -115,6 +115,9 @@ public class Win_Condition_Script : MonoBehaviour
 
         DOVirtual.Float(0, 1, 1, v => volumePlayerOne.weight = v);
         DOVirtual.Float(1, 0, 1, v => volumePlayerTwo.weight = v);
+
+        FMODUnity.RuntimeManager.PlayOneShot("event:/CrownGet");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Crowd");
     }
     public void PlayerTwoGetTheCrown()
     {
@@ -125,12 +128,15 @@ public class Win_Condition_Script : MonoBehaviour
 
         DOVirtual.Float(1, 0, 1, v => volumePlayerOne.weight = v);
         DOVirtual.Float(0, 1, 1, v => volumePlayerTwo.weight = v);
+
+        FMODUnity.RuntimeManager.PlayOneShot("event:/CrownGet");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Crowd");
     }
     public void DropTheCrown(Vector3 position)
     {
         GameObject crown = Instantiate(crownPrefab, position, Quaternion.identity);
         playerWhoHasTheCrown = 0;
-        crown.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(0, 1), Random.Range(0, 1)) * 10;
+        crown.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(0, 1), Random.Range(0, 1)) * 50);
     }
     private void PlayerWin(int numberOfThePlayer)
     {

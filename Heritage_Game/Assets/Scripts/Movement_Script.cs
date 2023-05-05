@@ -55,7 +55,7 @@ public class Movement_Script : MonoBehaviour
     public void Stun()
     {
         FMODUnity.RuntimeManager.PlayOneShot("event:/Stun");
-        StartCoroutine(RemoveInputForXSecond(4f));
+        StartCoroutine(RemoveInputForXSecond(6f));
         gameObject.layer = 6;
         if (dashScript.numberOfPlayer == Win_Condition_Script.Instance.playerWhoHasTheCrown)
         {
