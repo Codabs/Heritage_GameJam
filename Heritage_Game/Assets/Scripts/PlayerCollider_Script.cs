@@ -21,6 +21,7 @@ public class PlayerCollider_Script : MonoBehaviour
         if (collision.gameObject.TryGetComponent<Movement_Script>(out Movement_Script otherPlayerScript))
         {
             FMODUnity.RuntimeManager.PlayOneShot("event:/HitPlayer");
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Wilhelm");
             if (dash_Script.isDashing && !otherPlayerScript.isThePlayerStun)
             {
                 //Stun the other player
