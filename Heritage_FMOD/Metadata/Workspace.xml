@@ -23,7 +23,7 @@
 			<destination>{7a00e17d-06fd-4b97-8721-c90e2958ac9f}</destination>
 		</relationship>
 		<relationship name="masterAssetFolder">
-			<destination>{56154136-3b4e-4326-b473-b14e84745e2a}</destination>
+			<destination>{9ad522f1-684e-46ad-82da-0cacbbd01147}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{e426ffd8-2fe6-4a72-b712-a2d311153371}</destination>
