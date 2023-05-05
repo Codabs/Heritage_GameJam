@@ -550,9 +550,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   switchSettingsMigration: 1
   HasSourceProject: 0
-  HasPlatforms: 0
+  HasPlatforms: 1
   sourceProjectPath: ../Heritage_FMOD/Heritage_FMOD.fspro
-  sourceBankPath: Assets/_externals/FmodBanks/Desktop
+  sourceBankPath: Assets/_externals/FmodBanks
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1

@@ -2,7 +2,10 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Bank" id="{ffe437de-cf54-4595-9914-85cb1054c388}">
 		<property name="name">
-			<value>Master2</value>
+			<value>Master</value>
+		</property>
+		<property name="isMasterBank">
+			<value>true</value>
 		</property>
 		<relationship name="folder">
 			<destination>{f2529a3b-a7e0-48f2-81cc-d735ea1a39ec}</destination>

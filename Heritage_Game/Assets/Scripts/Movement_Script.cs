@@ -54,12 +54,15 @@ public class Movement_Script : MonoBehaviour
     }
     public void Stun()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Stun");
         StartCoroutine(RemoveInputForXSecond(4f));
         gameObject.layer = 6;
         if (dashScript.numberOfPlayer == Win_Condition_Script.Instance.playerWhoHasTheCrown)
         {
             Win_Condition_Script.Instance.DropTheCrown(transform.position);
             dashScript.haveTheCrown = false;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Wilhelm");
+
 
             Sequence s = DOTween.Sequence();
             s.SetUpdate(true);

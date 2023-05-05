@@ -23,7 +23,7 @@
 			<destination>{7a00e17d-06fd-4b97-8721-c90e2958ac9f}</destination>
 		</relationship>
 		<relationship name="masterAssetFolder">
-			<destination>{641ea1b5-3c3a-4e3e-bca6-c9a70a187ef8}</destination>
+			<destination>{56154136-3b4e-4326-b473-b14e84745e2a}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{e426ffd8-2fe6-4a72-b712-a2d311153371}</destination>
@@ -33,6 +33,7 @@
 		</relationship>
 		<relationship name="platforms">
 			<destination>{385775ee-edea-43e2-aaf7-6c88ee2fa003}</destination>
+			<destination>{2ac0f904-f317-4e54-bf3b-cf1e70520069}</destination>
 		</relationship>
 	</object>
 </objects>

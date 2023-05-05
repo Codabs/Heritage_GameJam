@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6894717978553690310}
   - component: {fileID: 7694025320770200838}
   - component: {fileID: 7994153891382975768}
+  - component: {fileID: 4261746462949442585}
   m_Layer: 8
   m_Name: Crown
   m_TagString: Player
@@ -114,6 +115,37 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &4261746462949442585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6894717978553690307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1711431455
+      Data2: 1101619638
+      Data3: 1735868804
+      Data4: 786077277
+    Path: event:/CrownGet
+  Event: 
+  PlayEvent: 5
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &6894717978839396243
 GameObject:
   m_ObjectHideFlags: 0

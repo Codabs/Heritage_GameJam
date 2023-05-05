@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMOD;
 
 public class PlayerCollider_Script : MonoBehaviour
 {
@@ -16,7 +17,8 @@ public class PlayerCollider_Script : MonoBehaviour
     //========
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.TryGetComponent<Movement_Script>(out Movement_Script otherPlayerScript))
+        if (dash_Script.isDashing) FMODUnity.RuntimeManager.PlayOneShot("event:/DashCollision");
+        if (collision.gameObject.TryGetComponent<Movement_Script>(out Movement_Script otherPlayerScript))
         {
             if(dash_Script.isDashing && !otherPlayerScript.isThePlayerStun)
             {
@@ -24,7 +26,6 @@ public class PlayerCollider_Script : MonoBehaviour
                 otherPlayerScript.Stun();
                 return;
             }
-            Debug.Log("No Stun");
         }
     }
 }
