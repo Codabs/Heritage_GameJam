@@ -5444,7 +5444,7 @@ MonoBehaviour:
   Name: Full Screen Fade FromBlack 1s (UnscaledGameTime)
   Fading: 0
   Duration: 2
-  fadeTimingMode: 0
+  fadeTimingMode: 1
   OnComplete: []
 --- !u!114 &589271961
 MonoBehaviour:

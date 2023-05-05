@@ -24,6 +24,7 @@ public class Dash_Script : MonoBehaviour
     public int numberOfPlayer = 1;
     public Camera cam;
     public CinemachineImpulseSource impulseSource;
+    public Animator player_Animator;
 
     //=========
     //FONCTION
@@ -68,5 +69,6 @@ public class Dash_Script : MonoBehaviour
         dashRechargeParticule.Play();
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
+        player_Animator.gameObject.transform.DOPunchScale(Vector3.one * 1.2f, 0.3f);
     }
 }
