@@ -51,6 +51,7 @@ public class Dash_Script : MonoBehaviour
         {
             isDashing = true;
             dashParticule.Play();
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Dash");
             movement_Script.maxSpeed = dashSpeed;
             rigidbody2D.velocity = direction * dashSpeed;
 
